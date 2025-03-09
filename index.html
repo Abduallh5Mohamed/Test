@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta name="viewport"content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    
+    <title>Exams Platform</title>
+    
+    <link rel="stylesheet" href="css/main_style.css">
+    <link rel="shortcut icon" href="image/ai-assistant.png" type="image/svg+xml">
+</head>
+<body>
+    
+    <section class="header">
+        <nav>
+            <a href="index.html">
+                <img src="image/Logo.png" alt ="logo" />
+            </a>
+
+            <div class="nav-links" id="navLinks">
+
+                <span class="icon" onclick="hidemenu()">&#10005;</span>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Sign_in.html">Sign in</a></li>
+                    <li><a href="#course_call">Course</a></li>
+                    <li><a href="fees_page.html">Fees</a></li>
+                    <li><a href="Contact_page.html">Contact</a></li>
+                </ul>
+            </div> 
+            <span class="icon" onclick="showmenu()">&#9776;</span>
+        </nav>
+       
+        <div class="text-box">
+            <h1>Ai-Exams</h1>
+            <p  id="animated-text">AI-Exams is an advanced digital platform established by eight students from the Faculty of Artificial Intelligence at Delta University for Science and Technology. Officially launched in 2025, AI-Exams specializes in providing smart and secure solutions for online assessments.
+
+                The platform leverages cutting-edge artificial intelligence technologies to offer highly efficient cheating detection, ensuring integrity in digital examinations. It features a simple and user-friendly interface, enabling instructors to effortlessly add and manage exam questions. AI-Exams prioritizes absolute security, safeguarding exam content and user data through robust protection protocols.
+                
+                Established through innovative collaboration by eight students from the Faculty of Artificial Intelligence at Delta University, AI-Exams represents a significant advancement towards smart and secure online examination practices.</p>
+            
+                <a href="Sign_in.html?signup=true" class="hero-btn">Sign Up</a>
+
+
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                let textElement = document.getElementById("animated-text"); // صحيح! "getElementById"
+                let words = textElement.innerText.split(" ");
+                textElement.innerHTML = "";
+            
+                words.forEach((word, index) => {
+                    let span = document.createElement("span");
+                    span.innerText = word + " ";
+                    span.style.animation = `fadeIn 0.5s forwards`;
+                    span.style.animationDelay = `${index * 0.3}s`;
+                    textElement.appendChild(span);
+                });
+            });
+            </script>
+            
+    </section>
+
+    <!--Course of Collage-->
+
+
+    <section class="course hidden-section  show " id="course_call" >
+       <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let section = document.getElementById("courses");
+        
+            function revealOnScroll() {
+                let sectionPosition = section.getBoundingClientRect().top;
+                let screenPosition = window.innerHeight / 1.3;
+        
+                if (sectionPosition < screenPosition) {
+                    section.classList.add("show");
+                }
+            }
+        
+            window.addEventListener("scroll", revealOnScroll);
+        });
+       </script>
+        
+        <h1>Courses we offer</h1>
+        <p>We are offer to three best computer science course for student by Gokul Global University</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h2>BCA</h2>
+                <p>The BCA course is a full time three years (six semesters) Bachelor’s Degree in Computer Application.The degree helps interested students in setting up a sound academic base for an advanced career in Computer Applications.</p>
+            </div>
+
+            <div class="course-col">
+                <h2>BSC-IT </h2>
+                <p>BSc (Bachelor of Science) in IT is basically about storing, processing, securing, and managing information. This degree is primarily focused on subjects such as software, databases, and networking. </p>
+            </div>
+
+            <div class="course-col">
+                <h2>BSC CA & IT</h2>
+                <p>The Bachelor of Science in (CS & IT) is an undergraduate degree course in computer applications for a duration of 3 years. The field relates to design, development and use of computer applications. </p>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!--Campus Section-->
+
+    <section class="campus">
+        <h1> Our Campus</h1>
+        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quisquam atque non voluptate</p> -->
+
+            <div class="row">
+                <div class="campus-col">
+                    <img src="image/cm1.jfif" alt="">
+                    <div class="layer">
+                        <h3>Environment</h3>
+                    </div>
+                </div>
+
+                <div class="campus-col">
+                    <img src="image/cm2.jfif" alt="">
+                    <div class="layer">
+                        <h3>Community</h3>
+                    </div>
+                </div>
+
+                <div class="campus-col">
+                    <img src="image/cm3.jfif" alt="">
+                    <div class="layer">
+                        <h3>Education</h3>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!--Facilities Section-->
+
+    <section class="facilities">
+        <h1> Our facilities</h1>
+        <p>Facilities provide for Students by Ai-Exams</p>
+
+        <div class="row">
+            <div class="facilities-col">
+                <img src="image/canteen.jfif" alt="">
+                <h3>Canteen</h3>
+                <p id="text">The objective of the Canteen and meal service is to protect by reducing the risk of foodborne illness, with proper sanitary conditions.</p>
+                <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        let textElement = document.getElementById("text"); // صحيح! "getElementById"
+                        let words = textElement.innerText.split(" ");
+                        textElement.innerHTML = "";
+                    
+                        words.forEach((word, index) => {
+                            let span = document.createElement("span");
+                            span.innerText = word + " ";
+                            span.style.animation = `fadeIn 0.5s forwards`;
+                            span.style.animationDelay = `${index * 0.3}s`;
+                            textElement.appendChild(span);
+                        });
+                    });
+                    </script>
+            </div>
+
+            <div class="facilities-col">
+                <img src="image/auditorium.jfif" alt="">
+                <h3>Auditorium</h3>
+                <p id="p">The college is having a huge indoor auditorium with a professionally-deployed acoustic system and a seating capacity of about 200 people.</p>
+                <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        let textElement = document.getElementById("p"); // صحيح! "getElementById"
+                        let words = textElement.innerText.split(" ");
+                        textElement.innerHTML = "";
+                    
+                        words.forEach((word, index) => {
+                            let span = document.createElement("span");
+                            span.innerText = word + " ";
+                            span.style.animation = `fadeIn 0.5s forwards`;
+                            span.style.animationDelay = `${index * 0.3}s`;
+                            textElement.appendChild(span);
+                        });
+                    });
+                    </script>
+            </div>
+
+            <div class="facilities-col">
+                <img src="image/hostel.jfif" alt="">
+                <h3>Hostel</h3>
+                <p id="para">hostel consists of a separate mess, administrative office, warden quarter. In addition to well furnished rooms.</p>
+<script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        let textElement = document.getElementById("para"); // صحيح! "getElementById"
+                        let words = textElement.innerText.split(" ");
+                        textElement.innerHTML = "";
+                    
+                        words.forEach((word, index) => {
+                            let span = document.createElement("span");
+                            span.innerText = word + " ";
+                            span.style.animation = `fadeIn 0.5s forwards`;
+                            span.style.animationDelay = `${index * 0.3}s`;
+                            textElement.appendChild(span);
+                        });
+                    });                
+                    </script>
+            </div>
+        </div>
+        </section>
+
+        <!--Call To Action Section-->
+
+        <section class="ctn">
+            <video autoplay loop muted>
+                <source src="image/video.mp4" type="video/mp4">
+                Your Browser does not support video playback.
+            </video>
+            <div class="content-overlay">
+                <h1>Together we unite to end cheating's blight</h1>
+            </div>
+        </section>
+        
+
+         <!--Footer-->
+         <section class="footer">
+             <h4>About Us</h4>
+            <p>Eight students from the Faculty of Artificial Intelligence at Delta University with ambitions to take over the world Digitally</p>
+         </section>
+
+    <!--Javascript is Start-->
+    <script src="javascript/main_script.js"></script>
+</body>
+
+    
+    
+</html>
